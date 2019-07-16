@@ -9,7 +9,7 @@ Stock Ubuntu 19.04 (Disco) Docker image with a default user for automation testi
 
 This image is built automatically on Docker Hub any time a commit is made or code is merged to the `master` branch. However, if you need to need to manually build an image on your workstation, execute the following:
 ```
-make image
+make build
 ```
 
 ## How to Run this Container
@@ -18,9 +18,10 @@ To run a container from this image, run this command:
 ```
 make run
 ```
+When you exit, the container is automatically removed.
 
 ## How to Clean Up
-To remove both the local container and image, run this command:
+To remove the container image, run this command:
 ```
 make clean
 ```
