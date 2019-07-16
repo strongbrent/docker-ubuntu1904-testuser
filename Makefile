@@ -13,5 +13,4 @@ run:
 
 .PHONY: clean
 clean:
-	- docker rm $(IMAGE_NAME)
 	- docker rmi $(IMAGE_NAME)
