@@ -12,6 +12,7 @@ RUN apt-get update \
         curl \
         wget \
         ca-certificates \
+        aptitude \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
