@@ -27,6 +27,7 @@ RUN mkdir -p /usr/share/man/man1
 
 # Switch to testuser
 USER testuser
+ENV USER testuser
 ENV HOME /home/testuser
 
 # Change working directory
